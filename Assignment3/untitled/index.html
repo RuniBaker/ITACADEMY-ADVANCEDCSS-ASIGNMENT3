@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	padding: 20px 0;
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -10px;
+	padding-left: 20px; /* Add left padding */
+}
+
+.image {
+	flex-basis: calc(100% / 5);
+	padding: 10px;
+}
+
+.image img {
+	max-width: 80%;
+	height: auto;
+}
+
+.description {
+	text-align: center;
+	padding: 5px 0;
+}
+
+@media (max-width: 768px) {
+	.image {
+		flex-basis: calc(100% / 2);
+	}
+
+	.image img {
+		max-width: 100%;
+	}
+}
+
+    </style>
+</head>
+<body>
+<h1>My Gallery</h1>
+<div class="gallery">
+    <div class="image">
+        <img src="1.jpg">
+        <div class="description">Image 1</div>
+    </div>
+    <div class="image">
+        <img src="2.jpg">
+        <div class="description">Image 2</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 3</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 4</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 5</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 6</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 7</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 8</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 9</div>
+    </div>
+    <div class="image">
+        <img src="3.jpg">
+        <div class="description">Image 10</div>
+    </div>
+</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet ipsum eu risus bibendum vehicula. Donec vitae laoreet ipsum. Vivamus tempor risus eu erat bibendum, non accumsan mi venenatis. Etiam in aliquet nisl, quis fringilla nisi. Nulla facilisi. Nulla facilisi. Aenean sed lacus eget neque suscipit euismod vel a nulla. Sed quis purus elit. Praesent vitae odio at erat congue convallis non sed nisl. Maecenas eget est imperdiet, tincidunt nisi ac, vestibulum velit. Nullam at elit eget nibh egestas pharetra. Quisque vitae maximus tortor, sit amet placerat lectus. Aliquam vel semper massa.</p>
+</body>
+</html>
